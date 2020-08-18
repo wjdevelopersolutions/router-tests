@@ -1,0 +1,152 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+*,
+html {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+p, span, em, strong {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.container {
+
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.container .row {
+    width: 100%;
+}
+
+.mt-5 {
+    margin-top: 5em;
+}
+
+.mt-3 {
+    margin-top: 3em;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.col-md-4 {
+    min-width: 20%;
+}
+
+.col-md-8 {
+    min-width: 80%;
+}
+
+.col-md-12 {
+    min-width: 100%;
+}
+
+.col-md-6 {
+    min-width: 50%;
+}
+
+
+/* Navbar */
+.navbar.navbar-dark {
+    background-color: #1a1a1a;
+    padding: 30px 0;
+}
+
+.navbar.navbar-dark > div .brand {
+
+}
+
+.navbar.navbar-dark > div .brand h3 a {
+    color: rgba(230, 225, 225, 0.822);
+    text-decoration: none;
+}
+
+.navbar.navbar-dark > div .brand h3 a:hover {
+    color: #fff;
+}
+
+.navbar.navbar-dark > div .navigation .navbar-nav {
+    display: flex;
+
+}
+
+.navbar.navbar-dark > div .navigation .navbar-nav .navbar-item {
+    display: flex;
+}
+
+
+.navbar.navbar-dark > div .navigation .navbar-nav .navbar-item .navbar-link {
+    margin: 0 25px;
+    text-decoration: none;
+    color: rgba(230, 225, 225, 0.822);
+}
+
+.navbar.navbar-dark > div .navigation .navbar-nav .navbar-item .navbar-link:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.active {
+    color: #fff !important;
+}
+
+
+.card {
+
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+        border-top-color: rgba(0, 0, 0, 0.125);
+        border-right-color: rgba(0, 0, 0, 0.125);
+        border-bottom-color: rgba(0, 0, 0, 0.125);
+        border-left-color: rgba(0, 0, 0, 0.125);
+}
+
+.card .card-header {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.card .card-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+
+

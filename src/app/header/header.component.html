@@ -1,0 +1,21 @@
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-4 brand">
+                <h3> <a href="/"> {{title}} </a> </h3>
+            </div>
+            <div class="col-md-8 navigation">
+
+                <ul class="navbar-nav">
+                    <li class="navbar-item"><a class="navbar-link" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active" [routerLink]="['/dashboard']">Inicio</a></li>
+                    <li class="navbar-item"><a class="navbar-link" routerLinkActive="active" [routerLink]="['/dashboard/grafica']">Grafica</a></li>
+                    <li class="navbar-item"><a class="navbar-link" routerLinkActive="active" [routerLink]="['/dashboard/progress']">Progress</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>

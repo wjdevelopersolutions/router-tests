@@ -16,6 +16,8 @@ import { CharComponent } from './components/char/char.component';
 
 import { ChartsModule } from 'ng2-charts';
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
+import { AuthGuard } from './auth-guard.service';
+import { AuthService } from './auth.service';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,6 @@ import { ProgressBarComponent } from './components/progress-bar/progress-bar.com
     ChartsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, AuthService, AuthGuard]
 })
 export class AppModule { }
